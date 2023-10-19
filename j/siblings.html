@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+    <style>
+      body * {
+        border: 1px solid black;
+        padding: 10px;
+        display: block;
+      }
+
+    </style>
+    <script>
+       $(document).ready(function() {
+        //  $("h4").next().css({"border":"2px solid blue"});
+        //  $("h4").nextAll().css({"border":"2px solid blue"});
+        //  $("h4").next().css({"border":"2px solid blue"});
+        //  $("h4").prev().css({"border":"2px solid blue"});
+        //  $("h4").prevAll().css({"border":"2px solid blue"});
+        //  $("h4").prevUntil("h1").css({"border":"2px solid blue"});
+         $("p").siblings("h6").css({"border":"2px solid blue"});
+        
+       })
+    </script>
+
+</head>
+<body>
+    <div>
+        <h1>One</h1>
+        <h2>Tow</h2>
+        <h3>Three</h3>
+        <h4>Four</h4>
+        <h5>Five</h5>
+        <h6>SIx</h6>
+        <p>krishna</p>
+    </div>
+</body>
+</html>
