@@ -6,16 +6,15 @@
     <title>Document</title>
 </head>
 <body>
+    <i id="demo"></i>
     <script>
-        function demo(num1 , num2) {
-            document.write(num1 + num2);
-            
-        
+        function myFunck(x = 5, y = 10) {
+            let sum;
+            sum = x + y;
+            return sum
         }
-        result = demo(5,5);
-        document.write(result)
-
-       
+        let a = myFunck();
+        document.write( " The value of : " , a)
     </script>
 </body>
 </html>
