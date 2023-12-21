@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       .container{
+        display: flex;
+        flex-direction: column; 
+        border: 2px solid black;
+        display:inline-block;
+        justify-content: center;
+        padding: 47px;
+       } 
+      #bulb{
+        width: 200px;
+        height: 200px; 
+        border: 2px solid black;
+        border-radius: 50%;
+
+      }
+      button{
+        margin: 10px 10px ;
+      }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="bulb"></div>
+        <button id="btnOn">ON</button>
+        <button id="btnOff">Off</button>
+    </div>
+  
+
+
+    <script>
+      let a = document.querySelector("#bulb")
+      let b = document.querySelector("#btnOn")
+      let c = document.querySelector("btnOff")
+      let d = 0;
+
+
+      b.addEventListener("click",function(){
+        if (d == 0) {
+            a.style.backgroundColor = "yellow"
+            a.style.border = "0px"
+            d = 1;
+            console.log("Yes Your value is 0 " );
+
+        }else{
+          a.style.backgroundColor = "white"
+          console.log("Yes Your value is 1" );
+          d = 0 
+          
+        }
+
+      })
+    
+
+      
+
+    </script>
+</body>
+</html>

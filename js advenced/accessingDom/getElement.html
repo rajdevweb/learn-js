@@ -5,6 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        #one{
+            width: 100px;
+            height: 100px;
+            border: 2px solid black;
+            font-size: 5rem;
+        }
+    </style>
 </head>
 
 <body>
@@ -23,7 +31,13 @@
         raj is god
     </p> -->
 
-    <h1>EVERYBODY IS OK </h1>
+    <!-- <h1>EVERYBODY IS OK </h1> -->
+
+    <div id="one">
+        A
+    </div>
+
+    
 
     <script>
         // let text = document.getElementById("container")
@@ -40,12 +54,26 @@
 
         // a.innerHTML("Raj is not god actually God is krishna")
        
-        //🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 2.Changing CSS  🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
+        //🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 3.Changing CSS  🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 
-       let contain =  document.querySelector("h1")
-        contain.style.backgroundColor = "black",
-        contain.style.color = "white"
+    //    let contain =  document.querySelector("h1")
+    //     contain.style.backgroundColor = "black",
+    //     contain.style.color = "white"
 
+
+        //🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 4.EventListener  🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
+         
+        let b = document.querySelector("#one")
+       
+
+        b.addEventListener("click",function(){
+          document.getElementById("one").innerHTML = "krishna is best god"
+          b.style.color = "white"
+          b.style.fontSize = "20px"
+          b.style.borderRadius = "5px"
+          b.style.backgroundColor = "#000"
+          b.style.fontFamily = "impact"
+        })
     </script>
 </body>
 
