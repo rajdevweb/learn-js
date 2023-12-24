@@ -64,15 +64,30 @@
         //🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 4.EventListener  🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
          
         let b = document.querySelector("#one")
+        let c = 0
        
 
         b.addEventListener("click",function(){
-          document.getElementById("one").innerHTML = "krishna is best god"
+        if (c == 0) {
+            document.getElementById("one").innerHTML = "True"
           b.style.color = "white"
           b.style.fontSize = "20px"
           b.style.borderRadius = "5px"
           b.style.backgroundColor = "#000"
           b.style.fontFamily = "impact"
+          b.style.cursor = "pointer"
+          c = 1
+        } else {
+            document.getElementById("one").innerHTML = "false"
+          b.style.color = "white"
+          b.style.fontSize = "20px"
+          b.style.borderRadius = "5px"
+          b.style.backgroundColor = "#000"
+          b.style.fontFamily = "impact"
+          b.style.cursor = "pointer"
+
+          c =  0 
+        }
         })
     </script>
 </body>
